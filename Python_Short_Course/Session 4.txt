@@ -1,0 +1,239 @@
+class Human():
+    def __init__(self, gender = "unknown", age = 0, mungry ="peacefull", hungry= 0):
+        self.gender = gender
+        self.age = age
+        self.mungry = mungry
+        self.hungry = hungry
+    
+    def set_gender(self):
+        self.gender = input("Please Enter Human's gender : ")
+        
+    def set_age(self):
+        self.age = int(input("Please Enter Human's age : "))
+        
+    def set_hungryLevel(self):
+        self.hungry = int(input("Please Enter Human's hungry level (0-10): "))
+        
+    def changeMungryLevel(self):
+        if 0 <= self.hungry < 4:
+            self.mungry = "peacefull"
+        elif 4 <= self.hungry < 8:
+            self.mungry = "little angry"
+        else:
+            self.mungry = "angry"
+        
+        return self.mungry
+    
+
+
+	
+Rahim = Human()
+
+#Practise
+
+
+
+
+
+#Inheritance
+
+		
+class Human():
+    def __init__(self, gender = "Human", age = 0):
+        self.gender = gender
+        self.age = age
+    
+    def speak(self):
+        print("I am a :", self.gender)
+
+		
+#gender = 'male'
+class Man(Human):
+    def __init__(self):
+        super().__init__()
+		#self.hair_color = 'green'
+		
+		
+	#over writting	
+	def speak(self):
+        print("I am a :", self.gender, "And my age is:", self.age)
+	
+
+rahim = Man()
+rahim.speak()
+
+
+#
+class Man(Human):
+    def __init__(self,hair_color,age):
+        super().__init__(gender = 'male', age = age)
+		self.hair_color = hair_color
+		
+	def speak(self):
+        print("I am a :", self.gender, "And my age is:", self.age)
+	
+
+rahim = Man("Brown" , 30)
+rahim.speak()
+print()
+
+
+
+
+
+
+
+#Encapsulation
+
+class bankAccount():
+    def __init__(self, acc_name = "Current", balance = 0):
+        self.acc_name = acc_name
+        self.balance = balance
+        
+        
+accObj = bankAccount()
+print(accObj.acc_name)
+print(accObj.balance)
+
+accObj.balance = 20000
+print(accObj.balance)
+
+
+
+
+
+
+
+class bankAccount():
+    def __init__(self, acc_name = "Current", balance = 0):
+        self.acc_name = acc_name
+        self.__balance = balance
+        
+    def getBalance(self):
+        return self.__balance
+
+    def setBalanceWithWithdraw(self,withdraw):
+        if withdraw > self.__balance:
+            print("Not enough Balance")
+        else:
+            self.__balance = self.__balance - withdraw
+            
+        return self.__balance
+        
+
+accObj = bankAccount(balance  = 24000)
+print(accObj.getBalance())
+print(accObj.setBalanceWithWithdraw(22000))
+
+
+
+
+
+
+
+#Polymorphism
+
+class bankAccount():
+    def __init__(self, acc_name = "Bank Account", balance = 0):
+        self.acc_name = acc_name
+        self.balance = balance
+
+    def withdraw(self,value):
+        self.balance = self.balance - value
+        print("You Have", self.balance)
+        
+    def disposite(self,value):
+        self.balance = self.balance + value
+        print("You Have", self.balance)
+		
+		
+		
+		
+class cuuenrtAccount(bankAccount):
+    def __init__(self, acc_name = "Current", balance = 1500):
+        self.acc_name = acc_name
+        self.balance = balance
+        super().__init__()
+
+    def withdraw(self,value):
+        if value > 1000:
+            print("We need to check")
+        else:
+            self.balance = self.balance - value
+            print("You Have", self.balance)
+			
+
+			
+class savingsAccount(bankAccount):
+    def __init__(self, acc_name = "Current", balance = 1500):
+        self.acc_name = acc_name
+        self.balance = balance
+        super().__init__()
+
+    def disposite(self,value):
+        self.balance = self.balance + value * .10
+        print("You Have", self.balance)
+
+
+		
+#duc_typing:
+
+def dc (obj):
+    
+    obj.disposite(10)
+    
+dc(cuuenrtAccount())
+
+
+
+
+
+#ABSTRUCTION
+
+
+
+
+from abc import ABC, abstractmethod
+
+class Animal(ABC):
+
+    @abstractmethod
+    def move(self):
+        pass
+
+
+class Human(Animal):
+
+    def move(self):
+        print("I can walk and run...")
+
+
+class Snake(Animal):
+
+    def move(self):
+        print("I can crawl...")
+
+		
+		
+	a1 = Animal()
+
+    h1 = Human()
+    h1.move()
+
+    s1 = Snake()
+    s1.move()
+	
+	
+	
+	
+	
+	
+#Method OVERLOADing
+def f(*args):
+    res = 1
+    for i in args:
+        res *= i
+        
+    return res
+
+f(2,4,5,6)
