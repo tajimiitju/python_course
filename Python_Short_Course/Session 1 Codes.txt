@@ -60,7 +60,7 @@ print('Is it less or equal?', 5 <= -2)
 
 
 
-Print
+#Print
 my_name = 'Jayanta'
 my_age = 25
 my_weight = 90
