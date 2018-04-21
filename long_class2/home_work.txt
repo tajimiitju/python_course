@@ -1,0 +1,2 @@
+1. input 3 numbers int. find max, min, sum.
+2. input 1 character check if vowel or consonant
