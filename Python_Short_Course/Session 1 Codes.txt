@@ -100,7 +100,7 @@ age = input()
 
 
 
-working with Files
+#working with Files
 #bad practise
 f = open("WorkingWithFile.txt", 'r') #return a file object
 text = f.read()
