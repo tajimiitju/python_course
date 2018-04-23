@@ -1,0 +1,30 @@
+1. Write a program to find maximum,minimum,mean between three numbers.
+
+2. Write a program to input month number and print number of days in that month.
+
+
+Example:
+Input:
+Enter month number: 1
+
+Output:
+It contains 31 days.
+
+
+
+Month
+January, March, May, July, August, October, December have	31 days
+February has 28/29 days
+April, June, September, November have 30 days
+
+
+
+3. Write a program to input marks of five subjects Physics, Chemistry, Biology, Mathematics and Computer. 
+Calculate TOTAL percentage(Not Each subject) and grade according to following:
+Percentage >= 90% : Grade A
+Percentage >= 80% : Grade B
+Percentage >= 70% : Grade C
+Percentage >= 60% : Grade D
+Percentage >= 40% : Grade E
+Percentage < 40% : Grade F
+Assume Each exam has 100 marks in total.
