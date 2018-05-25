@@ -1,0 +1,11 @@
+#5
+words = input()
+word=words.split(',')
+word
+word.sort(key=lambda x: x.lower())
+word
+for i in range(0,len(word)):
+    if(i<len(word)-1):
+        print(word[i]+',',end="")
+    else:
+        print(word[i],end="")

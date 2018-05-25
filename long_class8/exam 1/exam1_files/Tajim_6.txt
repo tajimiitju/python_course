@@ -1,0 +1,10 @@
+#6
+words = input()
+word=words.split(' ')
+word
+word.sort(key=lambda x: x.lower())
+word
+for i in range(0,len(word)):
+    word[i]=word[i].lower()
+    if(word[i]!=word[i-1]):
+        print(word[i]+' ',end="")

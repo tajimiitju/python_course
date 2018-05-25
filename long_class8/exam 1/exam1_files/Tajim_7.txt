@@ -1,0 +1,11 @@
+#7
+words = input()
+l=0
+u=0
+for i in range(0,len(words)):
+    if(words[i].isupper()):
+        u=u+1
+    if(words[i].islower()):
+        l=l+1
+print("UPPER CASE ",u)
+print("LOWE CASE ",l)

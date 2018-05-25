@@ -1,0 +1,4 @@
+#9
+mail = input()
+l = mail.split('@')
+print(l[0])
