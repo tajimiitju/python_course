@@ -1,0 +1,92 @@
+First Program
+print ('Hello World!')
+print (‘Whatever you like’)
+
+
+
+Comments
+# Bellow line will print our first program
+print ('Hello World!')
+print ('Hello # World!')
+
+
+
+Variables
+ 
+
+V1 , V2 = 'Jayanta ', 'Sarker'.
+a,b,c = 1, True, "Jayanta"
+
+
+
+Numbers and Math
+a = 2
+print(type(a))
+
+b = 2.5
+print(type(b))
+
+c = (2 + 5.1j)
+print(type(c))
+
+print(c.real)
+print(c.imag)
+
+# Int to Float
+
+b = 2.0
+print(b)
+
+b = float(2)
+print(b)
+
+# Float to complex
+c = complex(25.9)
+print(c)
+
+
+print('What is 3 + 2?', 3 + 2)
+print('What is 5 - 7?', 5 - 7)
+
+print('What is 3 * 2?', 3 * 2)
+print('What is 5 / 7?', 5 / 7)  # Division will always be resulted in float.
+print('What is 7 % 2?', 7 % 2)
+
+print('Is it greater?', 5 > -2)
+print('Is it less?', 5 < -2)
+print('Is it greater or equal?', 5 >= -2)
+print('Is it less or equal?', 5 <= -2)
+
+
+
+Print
+my_name = 'Jayanta'
+my_age = 25
+my_weight = 90
+my_height = 1.70
+
+
+print(f'My name is {my_name}.')
+print(f'My name is {my_name} and i am {my_age} years old.')
+print(f'My BMI - {my_weight / my_height ** 2}.')
+
+funnyOrNot = False
+formattedString = "Is that joke funny ? {}"
+print(formattedString.format(funnyOrNot))
+
+
+print('We come here to learn {} {}. and its realy fantastic or not ? {}'.format('python', 3, True))
+
+
+formatter = '{} {} {} {}'
+
+print(formatter.format(1, 2, 3, 4))
+print(formatter.format('one', 'two', 'three', 'four'))
+print(formatter.format(True, False, False, True))
+print(formatter.format(formatter, formatter, formatter, formatter))
+
+#advanced printing
+print('.' * 10)
+
+
+

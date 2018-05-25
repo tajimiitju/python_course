@@ -1,0 +1,201 @@
+PYTHON DATA STRUCTURE
+
+
+
+# loops
+
+mL = [1,2,3,4,5]
+
+for m in mL
+
+
+
+
+mL = [1,2,3,4,5]
+
+for m in mL:
+    if m == 3:
+        print("found")
+#         break
+        continue
+    
+    print (m)
+	
+	
+	
+	
+list(range(5))
+
+
+
+for m in range(6):
+    print (m)
+	
+	
+	
+x = 0
+while x < 10:
+    print(x)
+    x +=1
+	
+	
+	
+	
+	
+	
+	
+	
+#Dictionary
+
+myDict = {"name" : "jayanta", "male" : True, "height" : 1.70}
+
+myDict2 = dict(name = "sara", male = False)
+
+myDict2["height"] = 1.56
+myDict2["age"] = 23
+
+print(myDict)
+print(myDict2)
+
+#acessing data
+print(myDict['name'])
+
+
+print(myDict['BMI'])
+
+
+
+if 'BMI' in myDict:
+	print(myDict['BMI'])
+else:
+	print("This key doesnot contains in the dictionary")
+	
+	
+	
+try:
+    print(myDict['BMI'])
+except KeyError:
+    print("This key doesnot contains in the dictionary")	
+
+	
+print(myDict.get('BMI',"None"))
+
+print(myDict)
+myDict.clear()
+print(myDict)
+
+
+newDict = myDict.fromkeys(('name','male'))
+
+
+print(myDict)
+myDict.pop('name')
+print(myDict)
+
+
+
+
+
+#Tuple
+
+myList = [1, 2, 3, 4, 5]
+
+myTuple = (1, 2, 3, 4, 5)
+
+print(len(myList))
+print(len(myTuple))
+
+
+
+print(dir(myList))
+print("-" * 100)
+print(dir(myTuple))
+
+
+
+
+import sys
+
+
+print(sys.getsizeof(myList))
+print(sys.getsizeof(myTuple))
+
+
+
+
+import timeit as ti
+
+listTime = ti.timeit(stmt = "[1,2,3,4,5]",number=1000000)
+tupleTime = ti.timeit(stmt = "(1,2,3,4,5)",number=1000000)
+
+
+
+print(listTime)
+print(tupleTime)
+
+
+a = ("a")
+b = ("a", "b")
+c = ("a", "b", "c")
+
+print(a , "\n" , b, "\n" , c)
+
+
+
+a = 1,
+b = 1,2
+c = 1,2,3
+
+print(a , "\n" , b, "\n" , c)
+
+
+
+
+#Functions :
+
+dir()
+
+def myFunc ():
+    pass
+	
+dir()	
+
+
+
+
+
+def myF ():
+    print("Nothing ! ")
+    
+myF()
+
+
+
+import math
+def myF (r):
+    print(math.pi * r**2)
+    
+myF(4)
+
+
+
+def triangle (b,h):
+    print("Area of a triangle : ", .5*b*h)
+    
+triangle(4,5)
+
+
+
+
+def defaltArg (x = 0):
+   return x*3
+
+print(defaltArg (x=5))
+
+
+
+
+def defaltArg1 (y, x = 0):
+   return x*3 + y
+
+print(defaltArg1 (5, x=5)

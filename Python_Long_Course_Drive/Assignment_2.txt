@@ -1,0 +1,6 @@
+Scrape all data from this url "http://quotes.toscrape.com/"
+And dump the scrape data in a csv file.
+Column Header will be Quote, Author, Tags.
+All the tags will be in one cell and they will be separated by hifen "-"
+
+Submit this by thursday.
