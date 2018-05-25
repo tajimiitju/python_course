@@ -1,0 +1,6 @@
+selenium uses x path
+beautiful path uses dom path
+.
+conda install -c conda-forge beautifulsoup4
+.
+..
