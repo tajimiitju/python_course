@@ -1,0 +1,4 @@
+goto kaggle to learn:
+https://www.kaggle.com/
+https://www.kaggle.com/learn/pandas
+.
