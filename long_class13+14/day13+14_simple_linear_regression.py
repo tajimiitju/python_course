@@ -32,7 +32,7 @@ from sklearn.model_selection import train_test_split
 x_train, x_test, y_train, y_test = train_test_split(x,y,train_size = .8, random_state = 0)
 
 """
-day 14
+day 14 linear regression
 """
 ### start linear regression (univariant)
 from sklearn.linear_model import LinearRegression

@@ -54,7 +54,7 @@ from sklearn.model_selection import train_test_split
 x_train, x_test, y_train, y_test = train_test_split(x,y,train_size = .8, random_state = 0) #cntrl+i dile help asbe
 # 80% data train e rakhlam
 
-### Feature Scalling
+### Feature (standard) Scalling
 #jehetu beton onk besi r boyos kom tai betoner dominance bere gese. bt boyos ta onk important so scale kore eder kasakasi dominance korte hobe
 
 from sklearn.preprocessing import StandardScaler 

@@ -131,3 +131,5 @@ regressor_OLS.summary()
 regressor_opt = LinearRegression()
 regressor_opt.fit(x_train[:,2:3],y_train) #er sudhu oi 3 no ta nilam
 y_pred_opt = regressor_opt.predict(x_test[:,2:3])
+
+
